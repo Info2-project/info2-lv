@@ -41,16 +41,12 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
-    input, textarea, button {
+    input, button {
       padding: 0.75rem 1rem;
       border-radius: 8px;
       border: 1px solid #b7e4c7;
       font-size: 1rem;
       font-family: 'Inter', sans-serif;
-    }
-    textarea {
-      resize: vertical;
-      min-height: 100px;
     }
     button {
       background-color: #40916c;
@@ -79,23 +75,18 @@
 </head>
 <body>
   <h1>Info2.lv</h1>
-  <p>Mēs drīzumā startēsim ar jaunu zaļo projektu. Pievienojies jau tagad un uzzini pirmais!</p>
+  <p>Mēs drīzumā startēsim ar jaunu zaļo projektu. Pievienojies jaunumiem jau tagad un uzzini pirmais!</p>
 
   <form action="https://formspree.io/f/xvgknzrg" method="POST">
-    <label>
-      Tavs e-pasts:
-      <input type="email" name="email" required>
-    </label>
-    <label>
-      Ziņa:
-      <textarea name="message" required></textarea>
-    </label>
-    <button type="submit">Sūtīt</button>
+    <label for="email">Tavs e-pasts:</label>
+    <input type="email" id="email" name="email" placeholder="ievadi savu e-pastu" required>
+    <button type="submit">Pieteikties jaunumiem</button>
   </form>
 
   <div class="socials">
     <a href="#">Facebook</a>
     <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
     <a href="#">LinkedIn</a>
   </div>
 
